@@ -1,0 +1,17 @@
+import "./globals.css";
+import AdminSidebar from "@/components/AdminSidebar";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="flex bg-black">
+        <AdminSidebar />
+        <main className="flex-1 p-6">{children}</main>
+      </body>
+    </html>
+  );
+}
